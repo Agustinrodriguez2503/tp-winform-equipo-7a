@@ -36,5 +36,10 @@ namespace Grupo_7A
         {
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            slblFechaHora.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
+        }
     }
 }

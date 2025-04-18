@@ -18,3 +18,15 @@ C:\Users\agustin\Desktop\UTN 2025\PROGRAMACION III\TP 2 GRUPAL\tp-winform-equipo
 C:\Users\agustin\Desktop\UTN 2025\PROGRAMACION III\TP 2 GRUPAL\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.CoreCompileInputs.cache
 C:\Users\agustin\Desktop\UTN 2025\PROGRAMACION III\TP 2 GRUPAL\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.exe
 C:\Users\agustin\Desktop\UTN 2025\PROGRAMACION III\TP 2 GRUPAL\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.pdb
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\bin\Debug\Grupo 7A.exe.config
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\bin\Debug\Grupo 7A.exe
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\bin\Debug\Grupo 7A.pdb
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.AssemblyReference.cache
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo_7A.frmArticulos.resources
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo_7A.frmAgregarArticulo.resources
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo_7A.Properties.Resources.resources
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.GenerateResource.cache
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.CoreCompileInputs.cache
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.exe
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.pdb
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo_7A.frmAdministrar.resources
