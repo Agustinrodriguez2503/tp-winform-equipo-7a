@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|c:\\users\\nahue\\downloads\\repo\\tp-winform-equipo-7a\\negocio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|solutionrelative:negocio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|c:\\users\\nahue\\downloads\\repo\\tp-winform-equipo-7a\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5311D68-6812-4173-9446-41ECC3441FB3}|dominio\\dominio.csproj|c:\\users\\nahue\\downloads\\repo\\tp-winform-equipo-7a\\dominio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5311D68-6812-4173-9446-41ECC3441FB3}|dominio\\dominio.csproj|solutionrelative:dominio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|c:\\users\\nahue\\downloads\\repo\\tp-winform-equipo-7a\\grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|solutionrelative:grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\grupo 7a\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|solutionrelative:grupo 7a\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5311D68-6812-4173-9446-41ECC3441FB3}|dominio\\dominio.csproj|C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\dominio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5311D68-6812-4173-9446-41ECC3441FB3}|dominio\\dominio.csproj|solutionrelative:dominio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\grupo 7a\\frmadministrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -39,19 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\negocio\\Class1.cs",
-              "RelativeDocumentMoniker": "negocio\\Class1.cs",
-              "ToolTip": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\negocio\\Class1.cs",
-              "RelativeToolTip": "negocio\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\negocio\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "negocio\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\negocio\\AccesoDatos.cs",
+              "RelativeToolTip": "negocio\\AccesoDatos.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAADwv0UAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T21:11:33.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\dominio\\Class1.cs",
               "RelativeDocumentMoniker": "dominio\\Class1.cs",
@@ -59,8 +59,7 @@
               "RelativeToolTip": "dominio\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T21:11:03.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T21:11:03.981Z"
             },
             {
               "$type": "Document",
@@ -84,12 +83,11 @@
               "ToolTip": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\Grupo 7A\\frmAdministrar.cs [Dise\u00F1o]",
               "RelativeToolTip": "Grupo 7A\\frmAdministrar.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T20:40:32.743Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-04-18T20:40:32.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "frmAgregarArticulo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\Grupo 7A\\frmAgregarArticulo.cs",
               "RelativeDocumentMoniker": "Grupo 7A\\frmAgregarArticulo.cs",
@@ -101,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "frmArticulos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs",
               "RelativeDocumentMoniker": "Grupo 7A\\frmArticulos.cs",
