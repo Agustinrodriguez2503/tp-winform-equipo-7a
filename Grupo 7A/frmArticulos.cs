@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Grupo_7A
 {
-    public partial class Form1 : Form
+    public partial class frmArticulos : Form
     {
-        public Form1()
+        public frmArticulos()
         {
             InitializeComponent();
         }
@@ -28,6 +28,11 @@ namespace Grupo_7A
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminarFisico_Click(object sender, EventArgs e)
         {
 
         }

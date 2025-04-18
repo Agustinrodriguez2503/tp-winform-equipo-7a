@@ -1,6 +1,6 @@
 ﻿namespace Grupo_7A
 {
-    partial class Form1
+    partial class frmArticulos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -31,24 +31,20 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.gbFiltros = new System.Windows.Forms.GroupBox();
-            this.cbNombre = new System.Windows.Forms.CheckBox();
-            this.cbMarca = new System.Windows.Forms.CheckBox();
-            this.cbCategoria = new System.Windows.Forms.CheckBox();
-            this.btnFiltrar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dgvCódigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCategoría = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCodigo = new System.Windows.Forms.CheckBox();
+            this.btnFiltrar = new System.Windows.Forms.Button();
+            this.cbCategoria = new System.Windows.Forms.CheckBox();
+            this.cbMarca = new System.Windows.Forms.CheckBox();
+            this.cbNombre = new System.Windows.Forms.CheckBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEliminarFisico = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAdmMarcas = new System.Windows.Forms.Button();
             this.btnAdmCategorias = new System.Windows.Forms.Button();
             this.gbAdministrar = new System.Windows.Forms.GroupBox();
+            this.btnEliminarLogico = new System.Windows.Forms.Button();
             this.gbFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,27 +82,25 @@
             this.gbFiltros.TabStop = false;
             this.gbFiltros.Text = "Filtrar por:";
             // 
-            // cbNombre
+            // btnCodigo
             // 
-            this.cbNombre.AutoSize = true;
-            this.cbNombre.BackColor = System.Drawing.SystemColors.Control;
-            this.cbNombre.Location = new System.Drawing.Point(6, 19);
-            this.cbNombre.Name = "cbNombre";
-            this.cbNombre.Size = new System.Drawing.Size(63, 17);
-            this.cbNombre.TabIndex = 0;
-            this.cbNombre.Text = "Nombre";
-            this.cbNombre.UseVisualStyleBackColor = false;
+            this.btnCodigo.AutoSize = true;
+            this.btnCodigo.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCodigo.Location = new System.Drawing.Point(6, 42);
+            this.btnCodigo.Name = "btnCodigo";
+            this.btnCodigo.Size = new System.Drawing.Size(59, 17);
+            this.btnCodigo.TabIndex = 4;
+            this.btnCodigo.Text = "Código";
+            this.btnCodigo.UseVisualStyleBackColor = false;
             // 
-            // cbMarca
+            // btnFiltrar
             // 
-            this.cbMarca.AutoSize = true;
-            this.cbMarca.BackColor = System.Drawing.SystemColors.Control;
-            this.cbMarca.Location = new System.Drawing.Point(75, 19);
-            this.cbMarca.Name = "cbMarca";
-            this.cbMarca.Size = new System.Drawing.Size(56, 17);
-            this.cbMarca.TabIndex = 1;
-            this.cbMarca.Text = "Marca";
-            this.cbMarca.UseVisualStyleBackColor = false;
+            this.btnFiltrar.Location = new System.Drawing.Point(71, 38);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltrar.TabIndex = 3;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = true;
             // 
             // cbCategoria
             // 
@@ -119,98 +113,70 @@
             this.cbCategoria.Text = "Categoría";
             this.cbCategoria.UseVisualStyleBackColor = false;
             // 
-            // btnFiltrar
+            // cbMarca
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(71, 38);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(75, 23);
-            this.btnFiltrar.TabIndex = 3;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.cbMarca.AutoSize = true;
+            this.cbMarca.BackColor = System.Drawing.SystemColors.Control;
+            this.cbMarca.Location = new System.Drawing.Point(75, 19);
+            this.cbMarca.Name = "cbMarca";
+            this.cbMarca.Size = new System.Drawing.Size(56, 17);
+            this.cbMarca.TabIndex = 1;
+            this.cbMarca.Text = "Marca";
+            this.cbMarca.UseVisualStyleBackColor = false;
+            // 
+            // cbNombre
+            // 
+            this.cbNombre.AutoSize = true;
+            this.cbNombre.BackColor = System.Drawing.SystemColors.Control;
+            this.cbNombre.Location = new System.Drawing.Point(6, 19);
+            this.cbNombre.Name = "cbNombre";
+            this.cbNombre.Size = new System.Drawing.Size(63, 17);
+            this.cbNombre.TabIndex = 0;
+            this.cbNombre.Text = "Nombre";
+            this.cbNombre.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvCódigo,
-            this.dgvNombre,
-            this.dgvMarca,
-            this.dgvCategoría,
-            this.dgvPrecio});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(540, 397);
             this.dataGridView1.TabIndex = 5;
             // 
-            // dgvCódigo
-            // 
-            this.dgvCódigo.HeaderText = "Código";
-            this.dgvCódigo.Name = "dgvCódigo";
-            // 
-            // dgvNombre
-            // 
-            this.dgvNombre.HeaderText = "Nombre";
-            this.dgvNombre.Name = "dgvNombre";
-            // 
-            // dgvMarca
-            // 
-            this.dgvMarca.HeaderText = "Marca";
-            this.dgvMarca.Name = "dgvMarca";
-            // 
-            // dgvCategoría
-            // 
-            this.dgvCategoría.HeaderText = "Categoría";
-            this.dgvCategoría.Name = "dgvCategoría";
-            // 
-            // dgvPrecio
-            // 
-            this.dgvPrecio.HeaderText = "Precio";
-            this.dgvPrecio.Name = "dgvPrecio";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(558, 163);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(228, 275);
+            this.pictureBox1.Size = new System.Drawing.Size(228, 246);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // btnCodigo
-            // 
-            this.btnCodigo.AutoSize = true;
-            this.btnCodigo.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCodigo.Location = new System.Drawing.Point(6, 42);
-            this.btnCodigo.Name = "btnCodigo";
-            this.btnCodigo.Size = new System.Drawing.Size(59, 17);
-            this.btnCodigo.TabIndex = 4;
-            this.btnCodigo.Text = "Código";
-            this.btnCodigo.UseVisualStyleBackColor = false;
-            // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(12, 415);
+            this.btnAgregar.Location = new System.Drawing.Point(12, 427);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(84, 23);
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnEliminar
+            // btnEliminarFisico
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(174, 415);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 8;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminarFisico.Location = new System.Drawing.Point(468, 427);
+            this.btnEliminarFisico.Name = "btnEliminarFisico";
+            this.btnEliminarFisico.Size = new System.Drawing.Size(84, 23);
+            this.btnEliminarFisico.TabIndex = 8;
+            this.btnEliminarFisico.Text = "Eliminar de BD";
+            this.btnEliminarFisico.UseVisualStyleBackColor = true;
+            this.btnEliminarFisico.Click += new System.EventHandler(this.btnEliminarFisico_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(93, 415);
+            this.btnModificar.Location = new System.Drawing.Point(101, 427);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.Size = new System.Drawing.Size(84, 23);
             this.btnModificar.TabIndex = 9;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -244,22 +210,34 @@
             this.gbAdministrar.TabStop = false;
             this.gbAdministrar.Text = "Administrar:";
             // 
-            // Form1
+            // btnEliminarLogico
+            // 
+            this.btnEliminarLogico.Location = new System.Drawing.Point(190, 427);
+            this.btnEliminarLogico.Name = "btnEliminarLogico";
+            this.btnEliminarLogico.Size = new System.Drawing.Size(84, 23);
+            this.btnEliminarLogico.TabIndex = 10;
+            this.btnEliminarLogico.Text = "Eliminar ";
+            this.btnEliminarLogico.UseVisualStyleBackColor = true;
+            // 
+            // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(797, 457);
+            this.Controls.Add(this.btnEliminarLogico);
             this.Controls.Add(this.gbAdministrar);
             this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEliminarFisico);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.gbFiltros);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MinimumSize = new System.Drawing.Size(813, 496);
+            this.Name = "frmArticulos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Gestión de Artículos";
             this.gbFiltros.ResumeLayout(false);
             this.gbFiltros.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -280,19 +258,15 @@
         private System.Windows.Forms.CheckBox cbMarca;
         private System.Windows.Forms.CheckBox cbNombre;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCódigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvMarca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCategoría;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrecio;
         private System.Windows.Forms.CheckBox btnCodigo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnEliminarFisico;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnAdmMarcas;
         private System.Windows.Forms.Button btnAdmCategorias;
         private System.Windows.Forms.GroupBox gbAdministrar;
+        private System.Windows.Forms.Button btnEliminarLogico;
     }
 }
 
