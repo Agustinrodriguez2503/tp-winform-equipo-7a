@@ -1,0 +1,10 @@
+C:\Users\nahue\Desktop\UTN\2025\1° Cuatrimestre\Programación III\TP WinForm\Grupo 7A\Grupo 7A\bin\Debug\Grupo 7A.exe.config
+C:\Users\nahue\Desktop\UTN\2025\1° Cuatrimestre\Programación III\TP WinForm\Grupo 7A\Grupo 7A\bin\Debug\Grupo 7A.exe
+C:\Users\nahue\Desktop\UTN\2025\1° Cuatrimestre\Programación III\TP WinForm\Grupo 7A\Grupo 7A\bin\Debug\Grupo 7A.pdb
+C:\Users\nahue\Desktop\UTN\2025\1° Cuatrimestre\Programación III\TP WinForm\Grupo 7A\Grupo 7A\obj\Debug\Grupo 7A.csproj.AssemblyReference.cache
+C:\Users\nahue\Desktop\UTN\2025\1° Cuatrimestre\Programación III\TP WinForm\Grupo 7A\Grupo 7A\obj\Debug\Grupo_7A.Form1.resources
+C:\Users\nahue\Desktop\UTN\2025\1° Cuatrimestre\Programación III\TP WinForm\Grupo 7A\Grupo 7A\obj\Debug\Grupo_7A.Properties.Resources.resources
+C:\Users\nahue\Desktop\UTN\2025\1° Cuatrimestre\Programación III\TP WinForm\Grupo 7A\Grupo 7A\obj\Debug\Grupo 7A.csproj.GenerateResource.cache
+C:\Users\nahue\Desktop\UTN\2025\1° Cuatrimestre\Programación III\TP WinForm\Grupo 7A\Grupo 7A\obj\Debug\Grupo 7A.csproj.CoreCompileInputs.cache
+C:\Users\nahue\Desktop\UTN\2025\1° Cuatrimestre\Programación III\TP WinForm\Grupo 7A\Grupo 7A\obj\Debug\Grupo 7A.exe
+C:\Users\nahue\Desktop\UTN\2025\1° Cuatrimestre\Programación III\TP WinForm\Grupo 7A\Grupo 7A\obj\Debug\Grupo 7A.pdb
