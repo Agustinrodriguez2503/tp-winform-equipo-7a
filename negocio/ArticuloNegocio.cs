@@ -9,7 +9,7 @@ using dominio;
 
 namespace negocio
 {
-    internal class ArticuloNegocio
+    public class ArticuloNegocio
     {
         public List<Articulo> listar()
         {
@@ -18,24 +18,24 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("Select A.Id, Codigo, Nombre, A.Descripcion, IdMarca, M.Descripcion, IdCategoria, C.Descripcion ,Precio from ARTICULOS A, MARCAS M, CATEGORIAS C");
+                datos.setearConsulta("Select A.Id, Codigo, Nombre, A.Descripcion , IdMarca, M.Descripcion DescripcionM, IdCategoria, C.Descripcion DescripcionC ,Precio, I.ImagenUrl from ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I Where A.Id = I.IdArticulo And A.IdCategoria = C.Id And A.IdMarca = M.Id");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
                     Articulo aux = new Articulo();
-                    aux.Id = (int)datos.Lector["A.Id"];
+                    aux.Id = (int)datos.Lector["Id"];
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
-                    aux.Descripcion = (string)datos.Lector["A.Descripcion"];
+                    aux.Descripcion = (string)datos.Lector["Descripcion"];
                     aux.Marca = new Marca();
                     aux.Marca.Id = (int)datos.Lector["IdMarca"];
-                    aux.Marca.Descripcion = (string)datos.Lector["M.Descripcion"];
+                    aux.Marca.Descripcion = (string)datos.Lector["DescripcionM"];
                     aux.Categoria = new Categoria();
                     aux.Categoria.Id = (int)datos.Lector["IdCategoria"];
-                    aux.Categoria.Descripcion = (string)datos.Lector["C.Descripcion"];
-                    aux.Imagen = (string)datos.Lector["Imagen"];
-                    aux.Precio = (float)datos.Lector["Precio"];
+                    aux.Categoria.Descripcion = (string)datos.Lector["DescripcionC"];
+                    aux.Precio = (decimal)datos.Lector["Precio"];
+                    aux.Imagen = (string)datos.Lector["ImagenUrl"];
 
                     lista.Add(aux);
                 }
@@ -80,6 +80,55 @@ namespace negocio
             finally
             {
                 datos.cerrarConexion();
+            }
+        }
+
+        public void modificar(Articulo modificar)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("Update ARTICULOS set Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, IdMarca = @idMarca, IdCategoria = @idCategoria, Precio = @precio Where Id = @id");
+                datos.setearConsulta("Update IMAGENES set ImagenUrl = @imagenUrl Where IMAGENES.IdArticulo = @id");
+                // Modifica en tabla Articulos
+                datos.setearParametro("@codigo", modificar.Codigo);
+                datos.setearParametro("@nombre", modificar.Nombre);
+                datos.setearParametro("@descripcion", modificar.Descripcion);
+                datos.setearParametro("@idMarca", modificar.Marca.Id);
+                datos.setearParametro("@idCategoria", modificar.Categoria.Id);
+                datos.setearParametro("@precio", modificar.Precio);
+                datos.setearParametro("@id", modificar.Id);
+                // Modifica en tabla Imagenes
+                datos.setearParametro("@imagenUrl", modificar.Imagen);
+                datos.setearParametro("@IMAGENES.IdArticulo", modificar.Id);
+
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void eliminar(int id)
+        {
+            try
+            {
+                AccesoDatos datos = new AccesoDatos();
+                datos.setearConsulta("delete from ARTICULOS where id = @id");
+                datos.setearParametro("@id", id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
             }
         }
     }
