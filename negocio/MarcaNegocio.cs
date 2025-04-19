@@ -3,26 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 using dominio;
 
 namespace negocio
 {
-    internal class CategoriaNegocio
+    internal class MarcaNegocio
     {
-        public List<Categoria> listar()
+        public List<Marca> listar()
         {
-            List<Categoria> lista = new List<Categoria>();
+            List<Marca> lista = new List<Marca>();
             AccesoDatos datos = new AccesoDatos();
 
             try
             {
-                datos.setearConsulta("Select Id, Descripcion From CATEGORIAS");
+                datos.setearConsulta("Select Id, Descripcion From MARCAS");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
-                    Categoria aux = new Categoria();
+                    Marca aux = new Marca();
                     aux.Id = (int)datos.Lector["Id"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
 
@@ -42,12 +41,12 @@ namespace negocio
             }
         }
 
-        public void agregar(Categoria nuevo)
+        public void agregar(Marca nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Insert into CATEGORIAS(Descripcion) Values(@Descripcion)");
+                datos.setearConsulta("Insert into MARCAS(Descripcion) Values(@Descripcion)");
                 datos.setearParametro("@Descripcion", nuevo.Descripcion);
                 datos.ejecutarAccion();
             }
@@ -62,7 +61,7 @@ namespace negocio
             }
         }
 
-        public void modificar(Categoria modificar)
+        public void modificar(Marca modificar)
         {
             AccesoDatos datos = new AccesoDatos();
             try
@@ -89,7 +88,7 @@ namespace negocio
             try
             {
                 AccesoDatos datos = new AccesoDatos();
-                datos.setearConsulta("delete from CATEGORIAS where id = @id");
+                datos.setearConsulta("delete from MARCAS where id = @id");
                 datos.setearParametro("@id", id);
                 datos.ejecutarAccion();
             }
