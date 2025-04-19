@@ -32,14 +32,15 @@ namespace Grupo_7A
 
         private void frmAgregarArticulo_Load(object sender, EventArgs e)
         {
-            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
             try
             {
-                cbxCategoria.DataSource = articuloNegocio.listar();
+                cbxCategoria.DataSource = categoriaNegocio.listar();
                 cbxCategoria.ValueMember = "Id";
                 cbxCategoria.DisplayMember = "Descripcion";
 
-                cbxMarca.DataSource = articuloNegocio.listar();
+                cbxMarca.DataSource = marcaNegocio.listar();
                 cbxMarca.ValueMember = "Id";
                 cbxMarca.DisplayMember = "Descripcion";
 

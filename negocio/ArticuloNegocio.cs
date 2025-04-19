@@ -28,11 +28,13 @@ namespace negocio
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
+
                     aux.Marca = new Marca();
                     aux.Marca.Id = (int)datos.Lector["IdMarca"];
                     aux.Marca.Descripcion = (string)datos.Lector["DescripcionM"];
                     aux.Categoria = new Categoria();
                     aux.Categoria.Id = (int)datos.Lector["IdCategoria"];
+
                     aux.Categoria.Descripcion = (string)datos.Lector["DescripcionC"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
                     aux.Imagen = (string)datos.Lector["ImagenUrl"];
