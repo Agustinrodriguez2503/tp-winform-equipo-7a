@@ -42,11 +42,11 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.cbxMarca = new System.Windows.Forms.ComboBox();
             this.cbxCategoria = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxAgregarArticulo = new System.Windows.Forms.PictureBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnImagen = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarArticulo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodigoArticulo
@@ -118,6 +118,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 0;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // txtPrecio
             // 
@@ -132,6 +133,7 @@
             this.txtImagen.Name = "txtImagen";
             this.txtImagen.Size = new System.Drawing.Size(100, 20);
             this.txtImagen.TabIndex = 5;
+            this.txtImagen.Leave += new System.EventHandler(this.txtImagen_Leave);
             // 
             // txtDescripcion
             // 
@@ -163,13 +165,14 @@
             this.cbxCategoria.Size = new System.Drawing.Size(100, 21);
             this.cbxCategoria.TabIndex = 4;
             // 
-            // pictureBox1
+            // pbxAgregarArticulo
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(277, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(223, 227);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.pbxAgregarArticulo.Location = new System.Drawing.Point(277, 30);
+            this.pbxAgregarArticulo.Name = "pbxAgregarArticulo";
+            this.pbxAgregarArticulo.Size = new System.Drawing.Size(223, 227);
+            this.pbxAgregarArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxAgregarArticulo.TabIndex = 14;
+            this.pbxAgregarArticulo.TabStop = false;
             // 
             // btnAceptar
             // 
@@ -188,6 +191,7 @@
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnImagen
             // 
@@ -206,7 +210,7 @@
             this.Controls.Add(this.btnImagen);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbxAgregarArticulo);
             this.Controls.Add(this.cbxCategoria);
             this.Controls.Add(this.cbxMarca);
             this.Controls.Add(this.txtNombre);
@@ -227,7 +231,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Artículo";
             this.Load += new System.EventHandler(this.frmAgregarArticulo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,7 +253,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.ComboBox cbxMarca;
         private System.Windows.Forms.ComboBox cbxCategoria;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbxAgregarArticulo;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnImagen;

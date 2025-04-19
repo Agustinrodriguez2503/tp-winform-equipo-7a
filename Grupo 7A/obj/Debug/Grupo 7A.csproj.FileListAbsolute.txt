@@ -59,3 +59,8 @@ C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Gr
 C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.Up2Date
 C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.exe
 C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.pdb
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\Grupo 7A\bin\Debug\dominio.dll
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\Grupo 7A\bin\Debug\negocio.dll
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\Grupo 7A\bin\Debug\dominio.pdb
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\Grupo 7A\bin\Debug\negocio.pdb
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.Up2Date

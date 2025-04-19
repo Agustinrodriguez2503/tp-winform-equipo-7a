@@ -4,3 +4,9 @@ C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\dominio\obj\Debug\dom
 C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\dominio\obj\Debug\dominio.dll
 C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\dominio\obj\Debug\dominio.pdb
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\bin\Debug\dominio.dll
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\bin\Debug\dominio.pdb
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.dll
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.pdb

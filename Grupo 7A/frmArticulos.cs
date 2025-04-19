@@ -20,6 +20,23 @@ namespace Grupo_7A
             InitializeComponent();
         }
 
+        private void cargar()
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+                listaArticulos = negocio.listar();
+                dgvArticulos.DataSource = listaArticulos;
+                ocultarColumnas();
+                cargarImagen(listaArticulos[0].Imagen);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -32,7 +49,8 @@ namespace Grupo_7A
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            frmAgregarArticulo agregarArticulo = new frmAgregarArticulo();
+            agregarArticulo.ShowDialog();
         }
 
         private void btnEliminarFisico_Click(object sender, EventArgs e)
