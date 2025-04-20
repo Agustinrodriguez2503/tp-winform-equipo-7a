@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using dominio;
+using System.Net;
 
 namespace negocio
 {
@@ -60,19 +61,17 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Insert into ARTICULOS(Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) values(@Codigo, @Nombre, @Desc, @IdMarca, @IdCategoria, @Precio)");
-                datos.setearConsulta("Insert into IMAGENES(IdArticulo, ImagenUrl) values(@IdArticulo, @Imagen)");
                 //Inserta en la Tabla Articulos
+                datos.setearConsulta("Insert into ARTICULOS(Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) values(@Codigo, @Nombre, @Desc, @IdMarca, @IdCategoria, @Precio)");
                 datos.setearParametro("@Codigo", nuevo.Codigo);
                 datos.setearParametro("@Nombre", nuevo.Nombre);
                 datos.setearParametro("@Desc", nuevo.Descripcion);
                 datos.setearParametro("@IdMarca", nuevo.Marca.Id);
                 datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
                 datos.setearParametro("@Precio", nuevo.Precio);
-                //Inserta en la Tabla Imagenes
-                datos.setearParametro("@IdArticulo", nuevo.Id);
-                datos.setearParametro("@Imagen", nuevo.Imagen);
                 datos.ejecutarAccion();
+                //Inserta en la Tabla Imagenes
+                
             }
             catch (Exception ex)
             {
@@ -82,6 +81,24 @@ namespace negocio
             finally
             {
                 datos.cerrarConexion();
+            }
+        }
+
+
+        public void agregarImagen(Articulo articulo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("Insert into IMAGENES(IdArticulo, ImagenUrl) values(@IdArticulo, @Imagen)");
+                datos.setearParametro("@IdArticulo", articulo.Id);
+                datos.setearParametro("@Imagen", articulo.Imagen);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
             }
         }
 
@@ -126,6 +143,35 @@ namespace negocio
                 datos.setearConsulta("delete from ARTICULOS where id = @id");
                 datos.setearParametro("@id", id);
                 datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public int ultimoAgregado()
+        {
+            AccesoDatos datos = new AccesoDatos();
+            int id;
+            try
+            {
+               
+                datos.setearConsulta("Select TOP (1) Id From ARTICULOS Order By Id Desc");
+                datos.ejecutarLectura();
+
+                if (datos.Lector.Read()) // <- ESTA LÍNEA ES CLAVE
+                {
+                    id = (int)datos.Lector["Id"];
+                    return id;
+                }
+                else
+                {
+                    throw new Exception("No se encontró ningún artículo en la base de datos.");
+                }
+
+
             }
             catch (Exception ex)
             {

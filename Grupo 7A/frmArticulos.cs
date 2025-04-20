@@ -47,11 +47,6 @@ namespace Grupo_7A
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmAgregarArticulo agregarArticulo = new frmAgregarArticulo();
-            agregarArticulo.ShowDialog();
-        }
 
         private void btnEliminarFisico_Click(object sender, EventArgs e)
         {
@@ -106,6 +101,13 @@ namespace Grupo_7A
                 Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
                 cargarImagen(seleccionado.Imagen);
             }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmAgregarArticulo agregarArticulo = new frmAgregarArticulo();
+            agregarArticulo.ShowDialog();
+            cargar();
         }
     }
 }

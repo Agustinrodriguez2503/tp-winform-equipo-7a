@@ -90,5 +90,42 @@ namespace Grupo_7A
         {
             cargarImagen(txtImagen.Text);
         }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+
+            try
+            {
+
+                Articulo articulo = new Articulo();
+
+                articulo.Codigo = txtCodigo.Text;
+                articulo.Nombre = txtNombre.Text;
+                articulo.Descripcion = txtDescripcion.Text;
+                articulo.Marca = (Marca)cbxMarca.SelectedItem;
+                articulo.Categoria = (Categoria)cbxCategoria.SelectedItem;
+                articulo.Imagen = txtImagen.Text;
+                articulo.Precio = decimal.Parse(txtPrecio.Text);
+
+                negocio.agregar(articulo); //Agregar el Articulo a la Base de datos
+                articulo.Id = negocio.ultimoAgregado(); //Busca el ultimo articulo (Que es el que se agrego recien)
+                negocio.agregarImagen(articulo);// Para luego mandarle el articulo con su ID y poder cargarlo en la tabla IMAGENES con el ID de Articulo.
+
+
+                MessageBox.Show("¡Articulo agregado con exito!");
+             
+
+                Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+
+        }
     }
 }
