@@ -100,7 +100,7 @@
             // 
             this.rbtnCategoria.AutoSize = true;
             this.rbtnCategoria.Location = new System.Drawing.Point(17, 115);
-            this.rbtnCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnCategoria.Name = "rbtnCategoria";
             this.rbtnCategoria.Size = new System.Drawing.Size(72, 17);
             this.rbtnCategoria.TabIndex = 12;
@@ -112,7 +112,7 @@
             // 
             this.cbxCriterio.FormattingEnabled = true;
             this.cbxCriterio.Location = new System.Drawing.Point(118, 45);
-            this.cbxCriterio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxCriterio.Margin = new System.Windows.Forms.Padding(2);
             this.cbxCriterio.Name = "cbxCriterio";
             this.cbxCriterio.Size = new System.Drawing.Size(164, 21);
             this.cbxCriterio.TabIndex = 11;
@@ -121,7 +121,7 @@
             // 
             this.rbtnMarca.AutoSize = true;
             this.rbtnMarca.Location = new System.Drawing.Point(17, 85);
-            this.rbtnMarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnMarca.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnMarca.Name = "rbtnMarca";
             this.rbtnMarca.Size = new System.Drawing.Size(55, 17);
             this.rbtnMarca.TabIndex = 10;
@@ -140,7 +140,7 @@
             // 
             this.rbtnNombre.AutoSize = true;
             this.rbtnNombre.Location = new System.Drawing.Point(17, 56);
-            this.rbtnNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnNombre.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnNombre.Name = "rbtnNombre";
             this.rbtnNombre.Size = new System.Drawing.Size(62, 17);
             this.rbtnNombre.TabIndex = 9;
@@ -152,7 +152,7 @@
             // 
             this.rbtnCodigo.AutoSize = true;
             this.rbtnCodigo.Location = new System.Drawing.Point(17, 27);
-            this.rbtnCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnCodigo.Name = "rbtnCodigo";
             this.rbtnCodigo.Size = new System.Drawing.Size(58, 17);
             this.rbtnCodigo.TabIndex = 8;
@@ -232,6 +232,7 @@
             this.btnModificar.TabIndex = 9;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnAdmMarcas
             // 
@@ -266,9 +267,9 @@
             // 
             this.gbxBusquedaRapida.Controls.Add(this.txtBusquedaRapida);
             this.gbxBusquedaRapida.Location = new System.Drawing.Point(328, 333);
-            this.gbxBusquedaRapida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxBusquedaRapida.Margin = new System.Windows.Forms.Padding(2);
             this.gbxBusquedaRapida.Name = "gbxBusquedaRapida";
-            this.gbxBusquedaRapida.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxBusquedaRapida.Padding = new System.Windows.Forms.Padding(2);
             this.gbxBusquedaRapida.Size = new System.Drawing.Size(209, 62);
             this.gbxBusquedaRapida.TabIndex = 11;
             this.gbxBusquedaRapida.TabStop = false;
@@ -290,7 +291,7 @@
             // slblVacio
             // 
             this.slblVacio.Name = "slblVacio";
-            this.slblVacio.Size = new System.Drawing.Size(1, 17);
+            this.slblVacio.Size = new System.Drawing.Size(785, 17);
             this.slblVacio.Spring = true;
             // 
             // slblFechaHora

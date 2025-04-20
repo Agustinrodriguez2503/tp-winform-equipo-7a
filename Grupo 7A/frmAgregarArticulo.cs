@@ -53,6 +53,7 @@ namespace Grupo_7A
                     cbxMarca.SelectedValue = articulo.Marca.Id;
                     txtImagen.Text = articulo.Imagen;
                     txtPrecio.Text = articulo.Precio.ToString();
+                    pbxAgregarArticulo.Load(articulo.Imagen);
                 }
 
             }
@@ -125,6 +126,11 @@ namespace Grupo_7A
                 MessageBox.Show(ex.ToString());
             }
 
+
+        }
+
+        private void pbxAgregarArticulo_Click(object sender, EventArgs e)
+        {
 
         }
     }
