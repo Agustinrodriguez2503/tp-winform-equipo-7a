@@ -56,6 +56,7 @@ namespace Grupo_7A
                     List<Categoria> listaCategoria = negocioC.listar();
                     dgvMarcaCategoria.DataSource = listaCategoria;
                     dgvMarcaCategoria.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    dgvMarcaCategoria.Columns["Id"].Visible = false;
                 }
 
             }
@@ -136,6 +137,112 @@ namespace Grupo_7A
                 }
 
 
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnEliminarMC_Click(object sender, EventArgs e)
+        {
+            {
+                if (tipo)
+                {
+                    MarcaNegocio negocioM = new MarcaNegocio();
+                    Marca marca = new Marca();
+                    try
+                    {
+                        if (dgvMarcaCategoria.CurrentRow != null)
+                        {
+                            DialogResult respuesta = MessageBox.Show("¿Desea eliminar la marca seleccionada?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                            if (respuesta == DialogResult.Yes)
+                            {
+                                marca = (Marca)dgvMarcaCategoria.CurrentRow.DataBoundItem;
+                                negocioM.eliminar(marca.Id);
+                                cargar();
+                            }
+                        }
+                    }
+                    catch (Exception)
+                    {
+
+                        throw;
+                    }
+                }
+                else
+                {
+                    CategoriaNegocio negocioC = new CategoriaNegocio();
+                    Categoria categoria = new Categoria();
+                    try
+                    {
+                        if (dgvMarcaCategoria.CurrentRow != null)
+                        {
+                            DialogResult respuesta = MessageBox.Show("¿Desea eliminar la categoría seleccionada?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                            if (respuesta == DialogResult.Yes)
+                            {
+                                categoria = (Categoria)dgvMarcaCategoria.CurrentRow.DataBoundItem;
+                                negocioC.eliminar(categoria.Id);
+                                cargar();
+                            }
+                        }
+                    }
+                    catch (Exception)
+                    {
+
+                        throw;
+                    }
+                }
+            }
+
+        }
+
+        private void txtBusquedaRapidaMC_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                if (tipo)
+                {
+                    MarcaNegocio negocioM = new MarcaNegocio();
+                    List<Marca> listaMarca = negocioM.listar();
+                    List<Marca> listaFiltrada;
+                    string filtro = txtBusquedaRapidaMC.Text;
+                    if (filtro.Length >= 3)
+                    {
+                        listaFiltrada = listaMarca.FindAll(x => x.Descripcion.ToUpper().Contains(filtro.ToUpper()));
+                    }
+                    else
+                    {
+                        listaFiltrada = listaMarca;
+                    }
+
+                    dgvMarcaCategoria.DataSource = null;
+                    dgvMarcaCategoria.DataSource = listaFiltrada;
+                    dgvMarcaCategoria.Columns["Id"].Visible = false;
+
+
+                }
+                else
+                {
+                    CategoriaNegocio negocioC = new CategoriaNegocio();
+                    List<Categoria> listaCategoria = negocioC.listar();
+                    List<Categoria> listaFiltrada;
+                    string filtro = txtBusquedaRapidaMC.Text;
+                    if (filtro.Length >= 3)
+                    {
+                        listaFiltrada = listaCategoria.FindAll(x => x.Descripcion.ToUpper().Contains(filtro.ToUpper()));
+                    }
+                    else
+                    {
+                        listaFiltrada = listaCategoria;
+                    }
+
+                    dgvMarcaCategoria.DataSource = null;
+                    dgvMarcaCategoria.DataSource = listaFiltrada;
+                    //ocultarColumnas();
+                }
             }
             catch (Exception ex)
             {

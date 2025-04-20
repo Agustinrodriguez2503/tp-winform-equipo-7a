@@ -28,7 +28,15 @@ namespace Grupo_7A
                 listaArticulos = negocio.listar();
                 dgvArticulos.DataSource = listaArticulos;
                 ocultarColumnas();
-                cargarImagen(listaArticulos[0].Imagen);
+                if (listaArticulos != null && listaArticulos.Count > 0)
+                {
+                    cargarImagen(listaArticulos[0].Imagen);
+                }
+                else
+                {
+                    cargarImagen(null);
+                }
+                
             }
             catch (Exception ex)
             {
@@ -50,20 +58,25 @@ namespace Grupo_7A
             Articulo seleccionado;
             try
             {
-                DialogResult respuesta = MessageBox.Show("¿Desea eliminar el artículo seleccionado?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (respuesta == DialogResult.Yes)
+                if (dgvArticulos.CurrentRow != null)
                 {
-                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                    negocio.eliminar(seleccionado.Id);
-                    cargar();
+                    DialogResult respuesta = MessageBox.Show("¿Desea eliminar el artículo seleccionado?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                        negocio.eliminar(seleccionado.Id);
+                        cargar();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No existe artículo para eliminar.");
                 }
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
             }
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -145,6 +158,25 @@ namespace Grupo_7A
             frmAdministrar administrar = new frmAdministrar(false);
             administrar.ShowDialog();
 
+        }
+
+        private void txtBusquedaRapida_TextChanged(object sender, EventArgs e)
+        {
+            List<Articulo> listaFiltrada;
+            string filtro = txtBusquedaRapida.Text;
+
+            if (filtro.Length >= 3)
+            {
+                listaFiltrada = listaArticulos.FindAll(x => x.Nombre.ToUpper().Contains(filtro.ToUpper()));
+            }
+            else
+            {
+                listaFiltrada = listaArticulos;
+            }
+
+            dgvArticulos.DataSource = null;
+            dgvArticulos.DataSource = listaFiltrada;
+            ocultarColumnas();
         }
     }
 }
