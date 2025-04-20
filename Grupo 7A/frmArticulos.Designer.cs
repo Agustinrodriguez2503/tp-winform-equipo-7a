@@ -54,6 +54,7 @@
             this.slblVacio = new System.Windows.Forms.ToolStripStatusLabel();
             this.slblFechaHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.gbFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulos)).BeginInit();
@@ -101,7 +102,7 @@
             // 
             this.rbtnCategoria.AutoSize = true;
             this.rbtnCategoria.Location = new System.Drawing.Point(17, 115);
-            this.rbtnCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnCategoria.Name = "rbtnCategoria";
             this.rbtnCategoria.Size = new System.Drawing.Size(72, 17);
             this.rbtnCategoria.TabIndex = 12;
@@ -113,7 +114,7 @@
             // 
             this.cbxCriterio.FormattingEnabled = true;
             this.cbxCriterio.Location = new System.Drawing.Point(118, 45);
-            this.cbxCriterio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxCriterio.Margin = new System.Windows.Forms.Padding(2);
             this.cbxCriterio.Name = "cbxCriterio";
             this.cbxCriterio.Size = new System.Drawing.Size(164, 21);
             this.cbxCriterio.TabIndex = 11;
@@ -122,7 +123,7 @@
             // 
             this.rbtnMarca.AutoSize = true;
             this.rbtnMarca.Location = new System.Drawing.Point(17, 85);
-            this.rbtnMarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnMarca.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnMarca.Name = "rbtnMarca";
             this.rbtnMarca.Size = new System.Drawing.Size(55, 17);
             this.rbtnMarca.TabIndex = 10;
@@ -141,7 +142,7 @@
             // 
             this.rbtnNombre.AutoSize = true;
             this.rbtnNombre.Location = new System.Drawing.Point(17, 56);
-            this.rbtnNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnNombre.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnNombre.Name = "rbtnNombre";
             this.rbtnNombre.Size = new System.Drawing.Size(62, 17);
             this.rbtnNombre.TabIndex = 9;
@@ -153,7 +154,7 @@
             // 
             this.rbtnCodigo.AutoSize = true;
             this.rbtnCodigo.Location = new System.Drawing.Point(17, 27);
-            this.rbtnCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnCodigo.Name = "rbtnCodigo";
             this.rbtnCodigo.Size = new System.Drawing.Size(58, 17);
             this.rbtnCodigo.TabIndex = 8;
@@ -217,7 +218,7 @@
             // 
             // btnEliminarFisico
             // 
-            this.btnEliminarFisico.Location = new System.Drawing.Point(452, 288);
+            this.btnEliminarFisico.Location = new System.Drawing.Point(194, 288);
             this.btnEliminarFisico.Name = "btnEliminarFisico";
             this.btnEliminarFisico.Size = new System.Drawing.Size(84, 23);
             this.btnEliminarFisico.TabIndex = 8;
@@ -270,9 +271,9 @@
             // 
             this.gbxBusquedaRapida.Controls.Add(this.txtBusquedaRapida);
             this.gbxBusquedaRapida.Location = new System.Drawing.Point(328, 333);
-            this.gbxBusquedaRapida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxBusquedaRapida.Margin = new System.Windows.Forms.Padding(2);
             this.gbxBusquedaRapida.Name = "gbxBusquedaRapida";
-            this.gbxBusquedaRapida.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxBusquedaRapida.Padding = new System.Windows.Forms.Padding(2);
             this.gbxBusquedaRapida.Size = new System.Drawing.Size(209, 62);
             this.gbxBusquedaRapida.TabIndex = 11;
             this.gbxBusquedaRapida.TabStop = false;
@@ -294,7 +295,7 @@
             // slblVacio
             // 
             this.slblVacio.Name = "slblVacio";
-            this.slblVacio.Size = new System.Drawing.Size(1, 17);
+            this.slblVacio.Size = new System.Drawing.Size(785, 17);
             this.slblVacio.Spring = true;
             // 
             // slblFechaHora
@@ -308,11 +309,22 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(462, 288);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrar.TabIndex = 13;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 519);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.gbxBusquedaRapida);
             this.Controls.Add(this.gbAdministrar);
@@ -367,6 +379,7 @@
         private System.Windows.Forms.ToolStripStatusLabel slblVacio;
         private System.Windows.Forms.ToolStripStatusLabel slblFechaHora;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }
 

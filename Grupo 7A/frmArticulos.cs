@@ -144,13 +144,19 @@ namespace Grupo_7A
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            if(dgvArticulos.CurrentRow != null)
+            {
+                Articulo seleccionado;
+                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
 
-            Articulo seleccionado;
-            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-
-            frmAgregarArticulo modificarArticulo = new frmAgregarArticulo(seleccionado);
-            modificarArticulo.ShowDialog();
-            cargar();
+                frmAgregarArticulo modificarArticulo = new frmAgregarArticulo(seleccionado);
+                modificarArticulo.ShowDialog();
+                cargar();
+            }
+            else             
+            {
+                MessageBox.Show("No existe artículo para modificar.");
+            }
         }
 
         private void btnAdmMarcas_Click(object sender, EventArgs e)
@@ -183,6 +189,11 @@ namespace Grupo_7A
             dgvArticulos.DataSource = null;
             dgvArticulos.DataSource = listaFiltrada;
             ocultarColumnas();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

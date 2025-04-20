@@ -103,3 +103,20 @@ C:\Users\agustin\Desktop\TP 2 - PUSH\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Gru
 C:\Users\agustin\Desktop\TP 2 - PUSH\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.Up2Date
 C:\Users\agustin\Desktop\TP 2 - PUSH\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.exe
 C:\Users\agustin\Desktop\TP 2 - PUSH\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.pdb
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\bin\Debug\Grupo 7A.exe.config
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\bin\Debug\Grupo 7A.exe
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\bin\Debug\Grupo 7A.pdb
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\bin\Debug\dominio.dll
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\bin\Debug\negocio.dll
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\bin\Debug\dominio.pdb
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\bin\Debug\negocio.pdb
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.AssemblyReference.cache
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo_7A.frmAdministrar.resources
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo_7A.frmArticulos.resources
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo_7A.frmAgregarArticulo.resources
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo_7A.Properties.Resources.resources
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.GenerateResource.cache
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.CoreCompileInputs.cache
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.Up2Date
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.exe
+C:\Users\agustin\Desktop\TP 2- PROGRA\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.pdb
