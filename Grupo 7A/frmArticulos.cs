@@ -13,7 +13,7 @@ using negocio;
 namespace Grupo_7A
 {
     public partial class frmArticulos : Form
-    {   
+    {
         private List<Articulo> listaArticulos;
         public frmArticulos()
         {
@@ -36,7 +36,6 @@ namespace Grupo_7A
                 {
                     cargarImagen(null);
                 }
-                
             }
             catch (Exception ex)
             {
@@ -95,7 +94,7 @@ namespace Grupo_7A
                 dgvArticulos.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
                 dgvArticulos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                if(dgvArticulos.Rows.Count > 0)
+                if (dgvArticulos.Rows.Count > 0)
                 {
                     dgvArticulos.Rows[0].Selected = true;
                 }
@@ -106,9 +105,9 @@ namespace Grupo_7A
             {
                 MessageBox.Show(ex.ToString());
             }
-            
+
         }
-        private void ocultarColumnas() 
+        private void ocultarColumnas()
         {
             dgvArticulos.Columns["Imagen"].Visible = false;
             dgvArticulos.Columns["Id"].Visible = false;
@@ -144,19 +143,13 @@ namespace Grupo_7A
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if(dgvArticulos.CurrentRow != null)
-            {
-                Articulo seleccionado;
-                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
 
-                frmAgregarArticulo modificarArticulo = new frmAgregarArticulo(seleccionado);
-                modificarArticulo.ShowDialog();
-                cargar();
-            }
-            else             
-            {
-                MessageBox.Show("No existe artículo para modificar.");
-            }
+            Articulo seleccionado;
+            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+            frmAgregarArticulo modificarArticulo = new frmAgregarArticulo(seleccionado);
+            modificarArticulo.ShowDialog();
+            cargar();
         }
 
         private void btnAdmMarcas_Click(object sender, EventArgs e)
@@ -190,10 +183,133 @@ namespace Grupo_7A
             dgvArticulos.DataSource = listaFiltrada;
             ocultarColumnas();
         }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
+        private void rbtnCodigo_CheckedChanged(object sender, EventArgs e)
         {
-            this.Close();
+            if (rbtnCodigo != null && rbtnCodigo.Checked)
+            {
+                cbxCriterio.Text = string.Empty;             
+            }
+            cbxCriterio.Items.Clear();
+            cbxCriterio.Items.Add("Comienza con");
+            cbxCriterio.Items.Add("Termina con");
+            cbxCriterio.Items.Add("Contiene");
+        }
+
+        private void rbtnNombre_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbtnNombre != null && rbtnNombre.Checked)
+            {
+                cbxCriterio.Text = string.Empty;
+            }
+            cbxCriterio.Items.Clear();
+            cbxCriterio.Items.Add("Comienza con");
+            cbxCriterio.Items.Add("Termina con");
+            cbxCriterio.Items.Add("Contiene");
+        }
+
+        private void rbtnMarca_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbtnMarca != null && rbtnMarca.Checked)
+            {
+                cbxCriterio.Text = string.Empty;
+            }
+            cbxCriterio.Items.Clear();
+            cbxCriterio.Items.Add("Comienza con");
+            cbxCriterio.Items.Add("Termina con");
+            cbxCriterio.Items.Add("Contiene");
+        }
+
+        private void rbtnCategoria_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbtnCategoria != null && rbtnCategoria.Checked)
+            {
+                cbxCriterio.Text = string.Empty;
+            }
+            cbxCriterio.Items.Clear();
+            cbxCriterio.Items.Add("Comienza con");
+            cbxCriterio.Items.Add("Termina con");
+            cbxCriterio.Items.Add("Contiene");
+        }
+
+        private bool validarFiltro()
+        {
+            if ((rbtnCodigo.Checked == false) && (rbtnNombre.Checked == false) && (rbtnMarca.Checked == false) && (rbtnCategoria.Checked == false))
+            {
+                MessageBox.Show("Por favor, seleccione el campo para filtrar");
+                return true;
+            }
+            if (cbxCriterio.SelectedIndex < 0)
+            {
+                MessageBox.Show("Por favor, seleccione el criterio para filtrar");
+                return true;
+            }
+            //if (cbxCriterio.SelectedItem.ToString() == "Código")
+            //{
+                //if (string.IsNullOrEmpty(txtFiltroAvanzado.Text))
+                //{
+                   // MessageBox.Show("Debes cargar el filtro numérico");
+                    //return true;
+                //}
+                //if (!(soloNumeros(txtFiltroAvanzado.Text)))
+                //{
+                    //MessageBox.Show("Solo nros para filtrar por un campo numérico");
+                    //return true;
+                //}
+            //}
+            return false;
+        }
+
+        public string validarCampo()
+        {
+            if (rbtnCodigo.Checked)
+            {
+                return "Código";
+            }
+            else if (rbtnNombre.Checked)
+            {
+                return "Nombre";
+            }
+            else if (rbtnMarca.Checked)
+            {
+                return "Marca";
+            }
+            else if (rbtnCategoria.Checked)
+            {
+                return "Categoria";
+            }
+            return "";
+        }
+
+        //private bool soloNumeros(string cadena)
+        //{
+            //foreach (char caracter in cadena)
+            //{
+                //if (!(char.IsNumber(caracter)))
+                    //return false;
+            //}
+            //return true;
+
+        //}
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+                if (validarFiltro())
+                    return;
+
+                string campo = validarCampo();
+                string criterio = cbxCriterio.SelectedItem.ToString();
+                string filtro = txtFiltroAvanzado.Text;
+                dgvArticulos.DataSource = negocio.filtrar(campo, criterio, filtro);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

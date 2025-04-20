@@ -43,7 +43,7 @@
             // 
             this.dgvMarcaCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMarcaCategoria.Location = new System.Drawing.Point(18, 84);
-            this.dgvMarcaCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvMarcaCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvMarcaCategoria.Name = "dgvMarcaCategoria";
             this.dgvMarcaCategoria.RowHeadersWidth = 51;
             this.dgvMarcaCategoria.RowTemplate.Height = 24;
@@ -53,7 +53,7 @@
             // btnAgregarMC
             // 
             this.btnAgregarMC.Location = new System.Drawing.Point(18, 307);
-            this.btnAgregarMC.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregarMC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarMC.Name = "btnAgregarMC";
             this.btnAgregarMC.Size = new System.Drawing.Size(72, 27);
             this.btnAgregarMC.TabIndex = 1;
@@ -64,7 +64,7 @@
             // btnModificarMC
             // 
             this.btnModificarMC.Location = new System.Drawing.Point(100, 307);
-            this.btnModificarMC.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificarMC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModificarMC.Name = "btnModificarMC";
             this.btnModificarMC.Size = new System.Drawing.Size(72, 27);
             this.btnModificarMC.TabIndex = 2;
@@ -75,7 +75,7 @@
             // btnEliminarMC
             // 
             this.btnEliminarMC.Location = new System.Drawing.Point(182, 307);
-            this.btnEliminarMC.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarMC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminarMC.Name = "btnEliminarMC";
             this.btnEliminarMC.Size = new System.Drawing.Size(72, 27);
             this.btnEliminarMC.TabIndex = 3;
@@ -87,9 +87,9 @@
             // 
             this.gbxBusquedaRapidaMC.Controls.Add(this.txtBusquedaRapidaMC);
             this.gbxBusquedaRapidaMC.Location = new System.Drawing.Point(18, 10);
-            this.gbxBusquedaRapidaMC.Margin = new System.Windows.Forms.Padding(2);
+            this.gbxBusquedaRapidaMC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbxBusquedaRapidaMC.Name = "gbxBusquedaRapidaMC";
-            this.gbxBusquedaRapidaMC.Padding = new System.Windows.Forms.Padding(2);
+            this.gbxBusquedaRapidaMC.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbxBusquedaRapidaMC.Size = new System.Drawing.Size(236, 62);
             this.gbxBusquedaRapidaMC.TabIndex = 12;
             this.gbxBusquedaRapidaMC.TabStop = false;
@@ -106,7 +106,7 @@
             // txtAdministrador
             // 
             this.txtAdministrador.Location = new System.Drawing.Point(18, 272);
-            this.txtAdministrador.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAdministrador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAdministrador.Name = "txtAdministrador";
             this.txtAdministrador.Size = new System.Drawing.Size(155, 20);
             this.txtAdministrador.TabIndex = 13;
@@ -115,18 +115,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 354);
+            this.ClientSize = new System.Drawing.Size(284, 363);
             this.Controls.Add(this.txtAdministrador);
             this.Controls.Add(this.gbxBusquedaRapidaMC);
             this.Controls.Add(this.btnEliminarMC);
             this.Controls.Add(this.btnModificarMC);
             this.Controls.Add(this.btnAgregarMC);
             this.Controls.Add(this.dgvMarcaCategoria);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(292, 393);
-            this.MinimumSize = new System.Drawing.Size(292, 393);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmAdministrar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrar";
             this.Load += new System.EventHandler(this.frmAdministrar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcaCategoria)).EndInit();
