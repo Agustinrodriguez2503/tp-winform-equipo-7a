@@ -34,6 +34,7 @@
             this.btnEliminarMC = new System.Windows.Forms.Button();
             this.gbxBusquedaRapidaMC = new System.Windows.Forms.GroupBox();
             this.txtBusquedaRapidaMC = new System.Windows.Forms.TextBox();
+            this.txtAdministrador = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcaCategoria)).BeginInit();
             this.gbxBusquedaRapidaMC.SuspendLayout();
             this.SuspendLayout();
@@ -41,7 +42,7 @@
             // dgvMarcaCategoria
             // 
             this.dgvMarcaCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMarcaCategoria.Location = new System.Drawing.Point(24, 22);
+            this.dgvMarcaCategoria.Location = new System.Drawing.Point(24, 104);
             this.dgvMarcaCategoria.Name = "dgvMarcaCategoria";
             this.dgvMarcaCategoria.RowHeadersWidth = 51;
             this.dgvMarcaCategoria.RowTemplate.Height = 24;
@@ -50,7 +51,7 @@
             // 
             // btnAgregarMC
             // 
-            this.btnAgregarMC.Location = new System.Drawing.Point(24, 320);
+            this.btnAgregarMC.Location = new System.Drawing.Point(24, 378);
             this.btnAgregarMC.Name = "btnAgregarMC";
             this.btnAgregarMC.Size = new System.Drawing.Size(96, 33);
             this.btnAgregarMC.TabIndex = 1;
@@ -59,7 +60,7 @@
             // 
             // btnModificarMC
             // 
-            this.btnModificarMC.Location = new System.Drawing.Point(133, 320);
+            this.btnModificarMC.Location = new System.Drawing.Point(133, 378);
             this.btnModificarMC.Name = "btnModificarMC";
             this.btnModificarMC.Size = new System.Drawing.Size(96, 33);
             this.btnModificarMC.TabIndex = 2;
@@ -68,7 +69,7 @@
             // 
             // btnEliminarMC
             // 
-            this.btnEliminarMC.Location = new System.Drawing.Point(242, 320);
+            this.btnEliminarMC.Location = new System.Drawing.Point(242, 378);
             this.btnEliminarMC.Name = "btnEliminarMC";
             this.btnEliminarMC.Size = new System.Drawing.Size(96, 33);
             this.btnEliminarMC.TabIndex = 3;
@@ -78,7 +79,7 @@
             // gbxBusquedaRapidaMC
             // 
             this.gbxBusquedaRapidaMC.Controls.Add(this.txtBusquedaRapidaMC);
-            this.gbxBusquedaRapidaMC.Location = new System.Drawing.Point(24, 238);
+            this.gbxBusquedaRapidaMC.Location = new System.Drawing.Point(24, 12);
             this.gbxBusquedaRapidaMC.Name = "gbxBusquedaRapidaMC";
             this.gbxBusquedaRapidaMC.Size = new System.Drawing.Size(314, 76);
             this.gbxBusquedaRapidaMC.TabIndex = 12;
@@ -87,17 +88,25 @@
             // 
             // txtBusquedaRapidaMC
             // 
-            this.txtBusquedaRapidaMC.Location = new System.Drawing.Point(25, 34);
+            this.txtBusquedaRapidaMC.Location = new System.Drawing.Point(19, 31);
             this.txtBusquedaRapidaMC.Margin = new System.Windows.Forms.Padding(4);
             this.txtBusquedaRapidaMC.Name = "txtBusquedaRapidaMC";
             this.txtBusquedaRapidaMC.Size = new System.Drawing.Size(262, 22);
             this.txtBusquedaRapidaMC.TabIndex = 0;
             // 
+            // txtAdministrador
+            // 
+            this.txtAdministrador.Location = new System.Drawing.Point(24, 335);
+            this.txtAdministrador.Name = "txtAdministrador";
+            this.txtAdministrador.Size = new System.Drawing.Size(205, 22);
+            this.txtAdministrador.TabIndex = 13;
+            // 
             // frmAdministrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 376);
+            this.ClientSize = new System.Drawing.Size(378, 447);
+            this.Controls.Add(this.txtAdministrador);
             this.Controls.Add(this.gbxBusquedaRapidaMC);
             this.Controls.Add(this.btnEliminarMC);
             this.Controls.Add(this.btnModificarMC);
@@ -109,6 +118,7 @@
             this.gbxBusquedaRapidaMC.ResumeLayout(false);
             this.gbxBusquedaRapidaMC.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -120,5 +130,6 @@
         private System.Windows.Forms.Button btnEliminarMC;
         private System.Windows.Forms.GroupBox gbxBusquedaRapidaMC;
         private System.Windows.Forms.TextBox txtBusquedaRapidaMC;
+        private System.Windows.Forms.TextBox txtAdministrador;
     }
 }

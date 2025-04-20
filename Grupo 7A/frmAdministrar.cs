@@ -7,14 +7,143 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dominio;
+using negocio;
 
 namespace Grupo_7A
 {
     public partial class frmAdministrar : Form
     {
-        public frmAdministrar()
+        //Atributo para determinar si se trata de Marca(true) o Categoria(false)
+        private bool tipo;
+
+        public frmAdministrar(bool tipo)
         {
             InitializeComponent();
+            this.tipo = tipo;
+            if (tipo)
+            {
+                Text = "Administrar Marca";
+            }
+            else
+            {
+                Text = "Administrar Categoria";
+            }
         }
+
+        private void frmAdministrar_Load(object sender, EventArgs e)
+        {
+            cargar();
+        }
+
+        private void cargar()
+        {
+            try
+            {
+                if (tipo) //MARCA
+                {
+                    MarcaNegocio negocioM = new MarcaNegocio();
+                    List<Marca> listaMarca = negocioM.listar();
+
+                    dgvMarcaCategoria.DataSource = listaMarca;
+                    dgvMarcaCategoria.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    dgvMarcaCategoria.Columns["Id"].Visible = false;
+
+                }
+                else //CATEGORIA
+                {
+                    CategoriaNegocio negocioC = new CategoriaNegocio();
+                    List<Categoria> listaCategoria = negocioC.listar();
+                    dgvMarcaCategoria.DataSource = listaCategoria;
+                    dgvMarcaCategoria.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+        }
+
+        private void btnAgregarMC_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (tipo) //MARCA
+                {
+                    MarcaNegocio negocioM = new MarcaNegocio();
+                    Marca marca = new Marca();
+
+                    marca.Descripcion = txtAdministrador.Text;
+
+                    negocioM.agregar(marca);
+                    MessageBox.Show("¡Marca agregada con exito!");
+                }
+                else //CATEGORIA
+                {
+                    CategoriaNegocio negocioC = new CategoriaNegocio();
+                    Categoria categoria = new Categoria();
+
+                    categoria.Descripcion = txtAdministrador.Text;
+
+                    negocioC.agregar(categoria);
+                }
+
+                cargar();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnModificarMC_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tipo)
+                {
+                    MarcaNegocio negocioM = new MarcaNegocio();
+                    Marca marca = new Marca();
+
+                    marca = (Marca)dgvMarcaCategoria.CurrentRow.DataBoundItem;
+                    marca.Descripcion = txtAdministrador.Text;
+
+                    negocioM.modificar(marca);
+
+                    MessageBox.Show("¡Marca Modificada con Exito!");
+                    cargar();
+
+                }
+                else
+                {
+                    CategoriaNegocio negocioC = new CategoriaNegocio();
+                    Categoria categoria = new Categoria();
+
+                    categoria = (Categoria)dgvMarcaCategoria.CurrentRow.DataBoundItem;
+                    categoria.Descripcion = txtAdministrador.Text;
+
+                    negocioC.modificar(categoria);
+                    MessageBox.Show("¡Categoria Modificada con Exito!");
+                    cargar();
+
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+            
+        }
+
     }
 }

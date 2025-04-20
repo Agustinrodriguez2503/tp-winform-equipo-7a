@@ -37,10 +37,6 @@ namespace Grupo_7A
             }
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -136,6 +132,18 @@ namespace Grupo_7A
             frmAgregarArticulo modificarArticulo = new frmAgregarArticulo(seleccionado);
             modificarArticulo.ShowDialog();
             cargar();
+        }
+
+        private void btnAdmMarcas_Click(object sender, EventArgs e)
+        {
+            frmAdministrar administrador = new frmAdministrar(true); //// 1RO
+            administrador.ShowDialog();
+        }
+
+        private void btnAdmCategorias_Click(object sender, EventArgs e)
+        {
+            frmAdministrar administrador = new frmAdministrar(false); //// 1RO
+            administrador.ShowDialog();
         }
     }
 }
