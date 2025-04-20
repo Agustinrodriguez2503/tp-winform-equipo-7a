@@ -136,14 +136,15 @@ namespace Grupo_7A
 
         private void btnAdmMarcas_Click(object sender, EventArgs e)
         {
-            frmAdministrar administrador = new frmAdministrar(true); //// 1RO
-            administrador.ShowDialog();
+            frmAdministrar administrar = new frmAdministrar(true);
+            administrar.ShowDialog();
         }
 
         private void btnAdmCategorias_Click(object sender, EventArgs e)
         {
-            frmAdministrar administrador = new frmAdministrar(false); //// 1RO
-            administrador.ShowDialog();
+            frmAdministrar administrar = new frmAdministrar(false);
+            administrar.ShowDialog();
+
         }
     }
 }

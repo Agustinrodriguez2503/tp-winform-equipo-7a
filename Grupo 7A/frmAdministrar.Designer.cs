@@ -57,6 +57,7 @@
             this.btnAgregarMC.TabIndex = 1;
             this.btnAgregarMC.Text = "Agregar";
             this.btnAgregarMC.UseVisualStyleBackColor = true;
+            this.btnAgregarMC.Click += new System.EventHandler(this.btnAgregarMC_Click);
             // 
             // btnModificarMC
             // 
@@ -66,6 +67,7 @@
             this.btnModificarMC.TabIndex = 2;
             this.btnModificarMC.Text = "Modificar";
             this.btnModificarMC.UseVisualStyleBackColor = true;
+            this.btnModificarMC.Click += new System.EventHandler(this.btnModificarMC_Click);
             // 
             // btnEliminarMC
             // 
@@ -114,6 +116,7 @@
             this.Controls.Add(this.dgvMarcaCategoria);
             this.Name = "frmAdministrar";
             this.Text = "Administrar";
+            this.Load += new System.EventHandler(this.frmAdministrar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcaCategoria)).EndInit();
             this.gbxBusquedaRapidaMC.ResumeLayout(false);
             this.gbxBusquedaRapidaMC.PerformLayout();

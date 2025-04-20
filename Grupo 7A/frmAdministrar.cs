@@ -100,6 +100,7 @@ namespace Grupo_7A
 
                 MessageBox.Show(ex.ToString());
             }
+
         }
 
         private void btnModificarMC_Click(object sender, EventArgs e)
@@ -141,9 +142,6 @@ namespace Grupo_7A
 
                 MessageBox.Show(ex.ToString());
             }
-
-            
         }
-
     }
 }

@@ -65,7 +65,7 @@
             // txtBusquedaRapida
             // 
             this.txtBusquedaRapida.Location = new System.Drawing.Point(23, 33);
-            this.txtBusquedaRapida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBusquedaRapida.Margin = new System.Windows.Forms.Padding(4);
             this.txtBusquedaRapida.Name = "txtBusquedaRapida";
             this.txtBusquedaRapida.Size = new System.Drawing.Size(233, 22);
             this.txtBusquedaRapida.TabIndex = 0;
@@ -81,9 +81,9 @@
             this.gbFiltros.Controls.Add(this.rbtnCodigo);
             this.gbFiltros.Controls.Add(this.btnFiltrar);
             this.gbFiltros.Location = new System.Drawing.Point(20, 410);
-            this.gbFiltros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbFiltros.Margin = new System.Windows.Forms.Padding(4);
             this.gbFiltros.Name = "gbFiltros";
-            this.gbFiltros.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbFiltros.Padding = new System.Windows.Forms.Padding(4);
             this.gbFiltros.Size = new System.Drawing.Size(401, 185);
             this.gbFiltros.TabIndex = 3;
             this.gbFiltros.TabStop = false;
@@ -134,7 +134,7 @@
             // txtFiltroAvanzado
             // 
             this.txtFiltroAvanzado.Location = new System.Drawing.Point(157, 100);
-            this.txtFiltroAvanzado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFiltroAvanzado.Margin = new System.Windows.Forms.Padding(4);
             this.txtFiltroAvanzado.Name = "txtFiltroAvanzado";
             this.txtFiltroAvanzado.Size = new System.Drawing.Size(217, 22);
             this.txtFiltroAvanzado.TabIndex = 7;
@@ -166,7 +166,7 @@
             // btnFiltrar
             // 
             this.btnFiltrar.Location = new System.Drawing.Point(276, 140);
-            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(100, 28);
             this.btnFiltrar.TabIndex = 3;
@@ -185,7 +185,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvArticulos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvArticulos.Location = new System.Drawing.Point(13, 14);
-            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvArticulos.Name = "dgvArticulos";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -203,7 +203,7 @@
             // pbxArticulos
             // 
             this.pbxArticulos.Location = new System.Drawing.Point(749, 354);
-            this.pbxArticulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxArticulos.Margin = new System.Windows.Forms.Padding(4);
             this.pbxArticulos.Name = "pbxArticulos";
             this.pbxArticulos.Size = new System.Drawing.Size(277, 239);
             this.pbxArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -213,7 +213,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(20, 354);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(112, 28);
             this.btnAgregar.TabIndex = 7;
@@ -224,7 +224,7 @@
             // btnEliminarFisico
             // 
             this.btnEliminarFisico.Location = new System.Drawing.Point(603, 354);
-            this.btnEliminarFisico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminarFisico.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarFisico.Name = "btnEliminarFisico";
             this.btnEliminarFisico.Size = new System.Drawing.Size(112, 28);
             this.btnEliminarFisico.TabIndex = 8;
@@ -235,7 +235,7 @@
             // btnModificar
             // 
             this.btnModificar.Location = new System.Drawing.Point(139, 354);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(112, 28);
             this.btnModificar.TabIndex = 9;
@@ -246,7 +246,7 @@
             // btnAdmMarcas
             // 
             this.btnAdmMarcas.Location = new System.Drawing.Point(21, 28);
-            this.btnAdmMarcas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdmMarcas.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdmMarcas.Name = "btnAdmMarcas";
             this.btnAdmMarcas.Size = new System.Drawing.Size(104, 27);
             this.btnAdmMarcas.TabIndex = 10;
@@ -257,7 +257,7 @@
             // btnAdmCategorias
             // 
             this.btnAdmCategorias.Location = new System.Drawing.Point(148, 28);
-            this.btnAdmCategorias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdmCategorias.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdmCategorias.Name = "btnAdmCategorias";
             this.btnAdmCategorias.Size = new System.Drawing.Size(111, 27);
             this.btnAdmCategorias.TabIndex = 11;
@@ -270,9 +270,9 @@
             this.gbAdministrar.Controls.Add(this.btnAdmMarcas);
             this.gbAdministrar.Controls.Add(this.btnAdmCategorias);
             this.gbAdministrar.Location = new System.Drawing.Point(437, 518);
-            this.gbAdministrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbAdministrar.Margin = new System.Windows.Forms.Padding(4);
             this.gbAdministrar.Name = "gbAdministrar";
-            this.gbAdministrar.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbAdministrar.Padding = new System.Windows.Forms.Padding(4);
             this.gbAdministrar.Size = new System.Drawing.Size(277, 76);
             this.gbAdministrar.TabIndex = 5;
             this.gbAdministrar.TabStop = false;
@@ -334,7 +334,7 @@
             this.Controls.Add(this.pbxArticulos);
             this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.gbFiltros);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1077, 678);
             this.MinimumSize = new System.Drawing.Size(1077, 678);
             this.Name = "frmArticulos";

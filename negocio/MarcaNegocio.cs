@@ -66,7 +66,7 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Update CATEGORIAS set Descripcion = @Descripcion Where Id = @Id");
+                datos.setearConsulta("Update MARCAS set Descripcion = @Descripcion Where Id = @Id");
                 datos.setearParametro("@Descripcion", modificar.Descripcion);
                 datos.setearParametro("@Id", modificar.Id);
 
