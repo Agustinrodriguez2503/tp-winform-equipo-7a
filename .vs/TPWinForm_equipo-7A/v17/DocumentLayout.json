@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\",
+  "WorkspaceRootPath": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|solutionrelative:grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|c:\\users\\maria\\desktop\\tpprogramacionarticulo\\tp-winform-equipo-7a\\grupo 7a\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\grupo 7a\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|solutionrelative:grupo 7a\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|c:\\users\\agustin\\desktop\\tp2 - articulos\\tp-winform-equipo-7a\\grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|solutionrelative:grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|solutionrelative:grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|c:\\users\\maria\\desktop\\tpprogramacionarticulo\\tp-winform-equipo-7a\\grupo 7a\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\grupo 7a\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|solutionrelative:grupo 7a\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -30,15 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "frmAgregarArticulo.cs",
-              "DocumentMoniker": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\Grupo 7A\\frmAgregarArticulo.cs",
+              "DocumentMoniker": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\Grupo 7A\\frmAgregarArticulo.cs",
               "RelativeDocumentMoniker": "Grupo 7A\\frmAgregarArticulo.cs",
-              "ToolTip": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\Grupo 7A\\frmAgregarArticulo.cs",
+              "ToolTip": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\Grupo 7A\\frmAgregarArticulo.cs",
               "RelativeToolTip": "Grupo 7A\\frmAgregarArticulo.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAhwHAAAACZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -47,11 +47,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ArticuloNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\negocio\\ArticuloNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\negocio\\ArticuloNegocio.cs",
               "RelativeDocumentMoniker": "negocio\\ArticuloNegocio.cs",
-              "ToolTip": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\negocio\\ArticuloNegocio.cs",
+              "ToolTip": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\negocio\\ArticuloNegocio.cs",
               "RelativeToolTip": "negocio\\ArticuloNegocio.cs",
               "ViewState": "AgIAAJMAAAAAAAAAAAAowJkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -60,13 +60,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frmArticulos.cs",
-              "DocumentMoniker": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs",
+              "DocumentMoniker": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs",
               "RelativeDocumentMoniker": "Grupo 7A\\frmArticulos.cs",
-              "ToolTip": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs",
+              "ToolTip": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs",
               "RelativeToolTip": "Grupo 7A\\frmArticulos.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwv00AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAuwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T16:56:56.356Z",
               "EditorCaption": ""
@@ -75,9 +75,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "frmArticulos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs",
+              "DocumentMoniker": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs",
               "RelativeDocumentMoniker": "Grupo 7A\\frmArticulos.cs",
-              "ToolTip": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs [Dise\u00F1o]",
               "RelativeToolTip": "Grupo 7A\\frmArticulos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T16:56:10.842Z",
@@ -87,9 +87,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "frmAgregarArticulo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\Grupo 7A\\frmAgregarArticulo.cs",
+              "DocumentMoniker": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\Grupo 7A\\frmAgregarArticulo.cs",
               "RelativeDocumentMoniker": "Grupo 7A\\frmAgregarArticulo.cs",
-              "ToolTip": "C:\\Users\\maria\\Desktop\\TpProgramacionArticulo\\tp-winform-equipo-7a\\Grupo 7A\\frmAgregarArticulo.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\agustin\\Desktop\\TP2 - ARTICULOS\\tp-winform-equipo-7a\\Grupo 7A\\frmAgregarArticulo.cs [Dise\u00F1o]",
               "RelativeToolTip": "Grupo 7A\\frmAgregarArticulo.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T23:56:48.669Z",
