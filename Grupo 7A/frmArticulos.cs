@@ -144,12 +144,21 @@ namespace Grupo_7A
         private void btnModificar_Click(object sender, EventArgs e)
         {
 
-            Articulo seleccionado;
-            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            try
+            {
+                Articulo seleccionado;
+                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
 
-            frmAgregarArticulo modificarArticulo = new frmAgregarArticulo(seleccionado);
-            modificarArticulo.ShowDialog();
-            cargar();
+                frmAgregarArticulo modificarArticulo = new frmAgregarArticulo(seleccionado);
+                modificarArticulo.ShowDialog();
+                cargar();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
         }
 
         private void btnAdmMarcas_Click(object sender, EventArgs e)

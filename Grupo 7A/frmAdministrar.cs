@@ -81,7 +81,11 @@ namespace Grupo_7A
                     marca.Descripcion = txtAdministrador.Text;
 
                     negocioM.agregar(marca);
+                    txtAdministrador.Text = "";
                     MessageBox.Show("¡Marca agregada con exito!");
+
+                    btnEliminarMC.Enabled = dgvMarcaCategoria.Rows.Count != -1;
+
                 }
                 else //CATEGORIA
                 {
@@ -91,6 +95,10 @@ namespace Grupo_7A
                     categoria.Descripcion = txtAdministrador.Text;
 
                     negocioC.agregar(categoria);
+                    txtAdministrador.Text = "";                    
+                    MessageBox.Show("¡Categoria agregada con exito!");
+
+                    btnEliminarMC.Enabled = dgvMarcaCategoria.Rows.Count != -1;
                 }
 
                 cargar();
@@ -117,7 +125,7 @@ namespace Grupo_7A
                     marca.Descripcion = txtAdministrador.Text;
 
                     negocioM.modificar(marca);
-
+                    txtAdministrador.Text = "";
                     MessageBox.Show("¡Marca Modificada con Exito!");
                     cargar();
 
@@ -131,6 +139,7 @@ namespace Grupo_7A
                     categoria.Descripcion = txtAdministrador.Text;
 
                     negocioC.modificar(categoria);
+                    txtAdministrador.Text = "";
                     MessageBox.Show("¡Categoria Modificada con Exito!");
                     cargar();
 
@@ -162,6 +171,8 @@ namespace Grupo_7A
                                 marca = (Marca)dgvMarcaCategoria.CurrentRow.DataBoundItem;
                                 negocioM.eliminar(marca.Id);
                                 cargar();
+
+                                btnEliminarMC.Enabled = dgvMarcaCategoria.Rows.Count > 0;
                             }
                         }
                     }
@@ -185,6 +196,8 @@ namespace Grupo_7A
                                 categoria = (Categoria)dgvMarcaCategoria.CurrentRow.DataBoundItem;
                                 negocioC.eliminar(categoria.Id);
                                 cargar();
+
+                                btnEliminarMC.Enabled = dgvMarcaCategoria.Rows.Count > 0;
                             }
                         }
                     }

@@ -44,6 +44,9 @@ namespace Grupo_7A
                 cbxMarca.ValueMember = "Id";
                 cbxMarca.DisplayMember = "Descripcion";
 
+                cbxMarca.SelectedIndex = -1;
+                cbxCategoria.SelectedIndex = -1;
+
                 if(articulo != null)
                 {
                     txtCodigo.Text = articulo.Codigo.ToString();
@@ -99,6 +102,10 @@ namespace Grupo_7A
             try
             {
 
+                if (validarCargaArticulo())
+                    return;
+
+
                 Articulo articulo = new Articulo();
 
                 articulo.Codigo = txtCodigo.Text;
@@ -129,9 +136,52 @@ namespace Grupo_7A
 
         }
 
-        private void pbxAgregarArticulo_Click(object sender, EventArgs e)
+        private bool validarCargaArticulo()
         {
+            if (cbxCategoria.SelectedIndex == -1)
+            {
+                lblcbxCategoria.Visible = true;
+                return true;
+
+            }
+            else if (cbxMarca.SelectedIndex == -1)
+            {
+                lblcbxCategoria.Visible = false;
+                lblcbxMarca.Visible = true;
+                return true;
+
+            }
+            if (string.IsNullOrEmpty(txtPrecio.Text))
+            {
+                lblcbxCategoria.Visible = false;
+                lblcbxMarca.Visible = false;
+                lblPrecioVacio.Visible = true;
+                return true;
+            }
+            if (!(soloNumeros(txtPrecio.Text)))
+            {
+                lblcbxCategoria.Visible = false;
+                lblcbxMarca.Visible = false;
+                lblPrecioVacio.Visible = false;
+                lblSoloNumeros.Visible = true;
+                txtPrecio.Text = "";
+                return true;
+            }
+
+            return false;
 
         }
+
+        private bool soloNumeros(string cadena)
+        {
+            foreach (char caracter in cadena)
+            {
+                if (!(char.IsNumber(caracter)))
+                    return false;
+            }
+            return true;
+        }
+
+
     }
 }

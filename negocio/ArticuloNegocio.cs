@@ -71,7 +71,7 @@ namespace negocio
                 datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
                 datos.setearParametro("@Precio", nuevo.Precio);
                 datos.ejecutarAccion();
-                //Inserta en la Tabla Imagenes
+
                 
             }
             catch (Exception ex)
@@ -108,9 +108,8 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Update ARTICULOS set Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, IdMarca = @idMarca, IdCategoria = @idCategoria, Precio = @precio Where Id = @id");
-                datos.setearConsulta("Update IMAGENES set ImagenUrl = @imagenUrl Where IMAGENES.IdArticulo = @id");
                 // Modifica en tabla Articulos
+                datos.setearConsulta("Update ARTICULOS set Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, IdMarca = @idMarca, IdCategoria = @idCategoria, Precio = @precio Where Id = @id");
                 datos.setearParametro("@codigo", modificar.Codigo);
                 datos.setearParametro("@nombre", modificar.Nombre);
                 datos.setearParametro("@descripcion", modificar.Descripcion);
@@ -118,11 +117,11 @@ namespace negocio
                 datos.setearParametro("@idCategoria", modificar.Categoria.Id);
                 datos.setearParametro("@precio", modificar.Precio);
                 datos.setearParametro("@id", modificar.Id);
+                datos.ejecutarAccion();
                 // Modifica en tabla Imagenes
+                datos.setearConsulta("Update IMAGENES set ImagenUrl = @imagenUrl Where IdArticulo = @idArt");
                 datos.setearParametro("@imagenUrl", modificar.Imagen);
-                datos.setearParametro("@IMAGENES.IdArticulo", modificar.Id);
-
-
+                datos.setearParametro("@idArt", modificar.Id);
                 datos.ejecutarAccion();
             }
             catch (Exception ex)
