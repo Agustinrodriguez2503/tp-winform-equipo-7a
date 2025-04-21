@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|solutionrelative:grupo 7a\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\grupo 7a\\frmadministrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|solutionrelative:grupo 7a\\frmadministrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\grupo 7a\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50694768-F8B3-4F4D-AED4-A010AED719CA}|Grupo 7A\\Grupo 7A.csproj|solutionrelative:grupo 7a\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6896E417-3A61-4C4B-ABDF-4C24D28E028F}|negocio\\negocio.csproj|C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,19 +50,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ArticuloNegocio.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\negocio\\ArticuloNegocio.cs",
               "RelativeDocumentMoniker": "negocio\\ArticuloNegocio.cs",
               "ToolTip": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\negocio\\ArticuloNegocio.cs",
               "RelativeToolTip": "negocio\\ArticuloNegocio.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAIwHgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAMwA8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T00:15:21.416Z"
+              "WhenOpened": "2025-04-21T00:15:21.416Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "frmAgregarArticulo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\Grupo 7A\\frmAgregarArticulo.cs",
               "RelativeDocumentMoniker": "Grupo 7A\\frmAgregarArticulo.cs",
@@ -79,14 +80,14 @@
               "RelativeDocumentMoniker": "Grupo 7A\\frmArticulos.cs",
               "ToolTip": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs",
               "RelativeToolTip": "Grupo 7A\\frmArticulos.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAmwGMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwGEAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T16:56:56.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmAdministrar.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\Grupo 7A\\frmAdministrar.cs",
               "RelativeDocumentMoniker": "Grupo 7A\\frmAdministrar.cs",
@@ -98,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "frmArticulos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\Grupo 7A\\frmArticulos.cs",
               "RelativeDocumentMoniker": "Grupo 7A\\frmArticulos.cs",
@@ -109,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CategoriaNegocio.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\negocio\\CategoriaNegocio.cs",
               "RelativeDocumentMoniker": "negocio\\CategoriaNegocio.cs",
@@ -121,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "frmAdministrar.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\nahue\\Downloads\\repo\\tp-winform-equipo-7a\\Grupo 7A\\frmAdministrar.cs",
               "RelativeDocumentMoniker": "Grupo 7A\\frmAdministrar.cs",

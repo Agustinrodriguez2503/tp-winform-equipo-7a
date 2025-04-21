@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using dominio;
 using negocio;
+using System.Globalization;
 
 namespace Grupo_7A
 {
@@ -93,6 +94,12 @@ namespace Grupo_7A
                 ocultarColumnas();
                 dgvArticulos.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
                 dgvArticulos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                CultureInfo arCulture = new CultureInfo("es-AR"); // Código para argentina
+                dgvArticulos.Columns["Precio"].DefaultCellStyle.Format = "c2";
+                dgvArticulos.Columns["Precio"].DefaultCellStyle.FormatProvider = arCulture;
+                dgvArticulos.Columns["Precio"].DefaultCellStyle.NullValue = "0.00";
+
                 cargarImagen(listaArticulos[0].Imagen);
 
                 if (dgvArticulos.Rows.Count > 0)
