@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using dominio;
 using negocio;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Grupo_7A
 {
@@ -72,36 +73,44 @@ namespace Grupo_7A
         {
             try
             {
-
-                if (tipo) //MARCA
+                if (string.IsNullOrWhiteSpace(txtAdministrador.Text))
                 {
-                    MarcaNegocio negocioM = new MarcaNegocio();
-                    Marca marca = new Marca();
-
-                    marca.Descripcion = txtAdministrador.Text;
-
-                    negocioM.agregar(marca);
-                    txtAdministrador.Text = "";
-                    MessageBox.Show("¡Marca agregada con exito!");
-
-                    btnEliminarMC.Enabled = dgvMarcaCategoria.Rows.Count != -1;
-
+                    MessageBox.Show("El campo no puede estar vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtAdministrador.Focus();
                 }
-                else //CATEGORIA
+                else
                 {
-                    CategoriaNegocio negocioC = new CategoriaNegocio();
-                    Categoria categoria = new Categoria();
+                    if (tipo) //MARCA
+                    {
+                        MarcaNegocio negocioM = new MarcaNegocio();
+                        Marca marca = new Marca();
 
-                    categoria.Descripcion = txtAdministrador.Text;
+                        marca.Descripcion = txtAdministrador.Text;
 
-                    negocioC.agregar(categoria);
-                    txtAdministrador.Text = "";                    
-                    MessageBox.Show("¡Categoria agregada con exito!");
+                        negocioM.agregar(marca);
+                        txtAdministrador.Text = "";
+                        MessageBox.Show("¡Marca agregada con exito!");
 
-                    btnEliminarMC.Enabled = dgvMarcaCategoria.Rows.Count != -1;
+                        btnEliminarMC.Enabled = dgvMarcaCategoria.Rows.Count != -1;
+
+                    }
+                    else //CATEGORIA
+                    {
+                        CategoriaNegocio negocioC = new CategoriaNegocio();
+                        Categoria categoria = new Categoria();
+
+                        categoria.Descripcion = txtAdministrador.Text;
+
+                        negocioC.agregar(categoria);
+                        txtAdministrador.Text = "";
+                        MessageBox.Show("¡Categoria agregada con exito!");
+
+                        btnEliminarMC.Enabled = dgvMarcaCategoria.Rows.Count != -1;
+                    }
+
+                    cargar();
                 }
-
-                cargar();
+                
 
             }
             catch (Exception ex)
@@ -116,36 +125,42 @@ namespace Grupo_7A
         {
             try
             {
-                if (tipo)
+                if (string.IsNullOrWhiteSpace(txtAdministrador.Text))
                 {
-                    MarcaNegocio negocioM = new MarcaNegocio();
-                    Marca marca = new Marca();
-
-                    marca = (Marca)dgvMarcaCategoria.CurrentRow.DataBoundItem;
-                    marca.Descripcion = txtAdministrador.Text;
-
-                    negocioM.modificar(marca);
-                    txtAdministrador.Text = "";
-                    MessageBox.Show("¡Marca Modificada con Exito!");
-                    cargar();
-
+                    MessageBox.Show("El campo no puede estar vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtAdministrador.Focus();
                 }
                 else
                 {
-                    CategoriaNegocio negocioC = new CategoriaNegocio();
-                    Categoria categoria = new Categoria();
+                    if (tipo)
+                    {
+                        MarcaNegocio negocioM = new MarcaNegocio();
+                        Marca marca = new Marca();
 
-                    categoria = (Categoria)dgvMarcaCategoria.CurrentRow.DataBoundItem;
-                    categoria.Descripcion = txtAdministrador.Text;
+                        marca = (Marca)dgvMarcaCategoria.CurrentRow.DataBoundItem;
+                        marca.Descripcion = txtAdministrador.Text;
 
-                    negocioC.modificar(categoria);
-                    txtAdministrador.Text = "";
-                    MessageBox.Show("¡Categoria Modificada con Exito!");
-                    cargar();
+                        negocioM.modificar(marca);
+                        txtAdministrador.Text = "";
+                        MessageBox.Show("¡Marca Modificada con Exito!");
+                        cargar();
 
+                    }
+                    else
+                    {
+                        CategoriaNegocio negocioC = new CategoriaNegocio();
+                        Categoria categoria = new Categoria();
+
+                        categoria = (Categoria)dgvMarcaCategoria.CurrentRow.DataBoundItem;
+                        categoria.Descripcion = txtAdministrador.Text;
+
+                        negocioC.modificar(categoria);
+                        txtAdministrador.Text = "";
+                        MessageBox.Show("¡Categoria Modificada con Exito!");
+                        cargar();
+
+                    }
                 }
-
-
             }
             catch (Exception ex)
             {

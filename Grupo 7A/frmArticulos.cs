@@ -97,6 +97,7 @@ namespace Grupo_7A
 
                 if (dgvArticulos.Rows.Count > 0)
                 {
+                    cargar();
                     dgvArticulos.Rows[0].Selected = true;
                 }
 
