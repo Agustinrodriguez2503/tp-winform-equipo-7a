@@ -99,8 +99,11 @@ namespace Grupo_7A
                 dgvArticulos.Columns["Precio"].DefaultCellStyle.Format = "c2";
                 dgvArticulos.Columns["Precio"].DefaultCellStyle.FormatProvider = arCulture;
                 dgvArticulos.Columns["Precio"].DefaultCellStyle.NullValue = "0.00";
-
-                cargarImagen(listaArticulos[0].Imagen);
+                if (listaArticulos.Count > 0)
+                {
+                    cargarImagen(listaArticulos[0].Imagen);
+                }
+             
 
                 if (dgvArticulos.Rows.Count > 0)
                 {

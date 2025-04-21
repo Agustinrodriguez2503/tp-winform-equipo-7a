@@ -47,10 +47,10 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnImagen = new System.Windows.Forms.Button();
             this.gbCargarArticulo = new System.Windows.Forms.GroupBox();
+            this.lblPrecioVacio = new System.Windows.Forms.Label();
             this.lblSoloNumeros = new System.Windows.Forms.Label();
             this.lblcbxMarca = new System.Windows.Forms.Label();
             this.lblcbxCategoria = new System.Windows.Forms.Label();
-            this.lblPrecioVacio = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarArticulo)).BeginInit();
             this.gbCargarArticulo.SuspendLayout();
             this.SuspendLayout();
@@ -128,7 +128,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(116, 37);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(132, 22);
             this.txtCodigo.TabIndex = 0;
@@ -137,7 +137,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(116, 292);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(132, 22);
             this.txtPrecio.TabIndex = 6;
@@ -145,7 +145,7 @@
             // txtImagen
             // 
             this.txtImagen.Location = new System.Drawing.Point(116, 250);
-            this.txtImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtImagen.Margin = new System.Windows.Forms.Padding(4);
             this.txtImagen.Name = "txtImagen";
             this.txtImagen.Size = new System.Drawing.Size(132, 22);
             this.txtImagen.TabIndex = 5;
@@ -154,7 +154,7 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Location = new System.Drawing.Point(116, 123);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(132, 22);
             this.txtDescripcion.TabIndex = 2;
@@ -162,7 +162,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(116, 81);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(132, 22);
             this.txtNombre.TabIndex = 1;
@@ -172,25 +172,25 @@
             this.cbxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMarca.FormattingEnabled = true;
             this.cbxMarca.Location = new System.Drawing.Point(116, 209);
-            this.cbxMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxMarca.Margin = new System.Windows.Forms.Padding(4);
             this.cbxMarca.Name = "cbxMarca";
             this.cbxMarca.Size = new System.Drawing.Size(132, 24);
-            this.cbxMarca.TabIndex = 3;
+            this.cbxMarca.TabIndex = 4;
             // 
             // cbxCategoria
             // 
             this.cbxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCategoria.FormattingEnabled = true;
             this.cbxCategoria.Location = new System.Drawing.Point(116, 171);
-            this.cbxCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.cbxCategoria.Name = "cbxCategoria";
             this.cbxCategoria.Size = new System.Drawing.Size(132, 24);
-            this.cbxCategoria.TabIndex = 4;
+            this.cbxCategoria.TabIndex = 3;
             // 
             // pbxAgregarArticulo
             // 
             this.pbxAgregarArticulo.Location = new System.Drawing.Point(369, 32);
-            this.pbxAgregarArticulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxAgregarArticulo.Margin = new System.Windows.Forms.Padding(4);
             this.pbxAgregarArticulo.Name = "pbxAgregarArticulo";
             this.pbxAgregarArticulo.Size = new System.Drawing.Size(297, 342);
             this.pbxAgregarArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -200,10 +200,10 @@
             // btnAceptar
             // 
             this.btnAceptar.Location = new System.Drawing.Point(60, 397);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(100, 28);
-            this.btnAceptar.TabIndex = 7;
+            this.btnAceptar.TabIndex = 0;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -211,10 +211,10 @@
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(201, 397);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 28);
-            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.TabIndex = 1;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -222,7 +222,7 @@
             // btnImagen
             // 
             this.btnImagen.Location = new System.Drawing.Point(265, 250);
-            this.btnImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnImagen.Margin = new System.Windows.Forms.Padding(4);
             this.btnImagen.Name = "btnImagen";
             this.btnImagen.Size = new System.Drawing.Size(33, 25);
             this.btnImagen.TabIndex = 17;
@@ -252,6 +252,18 @@
             this.gbCargarArticulo.Size = new System.Drawing.Size(314, 349);
             this.gbCargarArticulo.TabIndex = 18;
             this.gbCargarArticulo.TabStop = false;
+            // 
+            // lblPrecioVacio
+            // 
+            this.lblPrecioVacio.AutoSize = true;
+            this.lblPrecioVacio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioVacio.ForeColor = System.Drawing.Color.Red;
+            this.lblPrecioVacio.Location = new System.Drawing.Point(254, 295);
+            this.lblPrecioVacio.Name = "lblPrecioVacio";
+            this.lblPrecioVacio.Size = new System.Drawing.Size(15, 20);
+            this.lblPrecioVacio.TabIndex = 22;
+            this.lblPrecioVacio.Text = "*";
+            this.lblPrecioVacio.Visible = false;
             // 
             // lblSoloNumeros
             // 
@@ -286,18 +298,6 @@
             this.lblcbxCategoria.Text = "* Seleccione una Categoria";
             this.lblcbxCategoria.Visible = false;
             // 
-            // lblPrecioVacio
-            // 
-            this.lblPrecioVacio.AutoSize = true;
-            this.lblPrecioVacio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioVacio.ForeColor = System.Drawing.Color.Red;
-            this.lblPrecioVacio.Location = new System.Drawing.Point(254, 295);
-            this.lblPrecioVacio.Name = "lblPrecioVacio";
-            this.lblPrecioVacio.Size = new System.Drawing.Size(15, 20);
-            this.lblPrecioVacio.TabIndex = 22;
-            this.lblPrecioVacio.Text = "*";
-            this.lblPrecioVacio.Visible = false;
-            // 
             // frmAgregarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -310,7 +310,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.pbxAgregarArticulo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAgregarArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Artículo";
