@@ -93,13 +93,13 @@ namespace Grupo_7A
                 ocultarColumnas();
                 dgvArticulos.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
                 dgvArticulos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                cargarImagen(listaArticulos[0].Imagen);
 
                 if (dgvArticulos.Rows.Count > 0)
                 {
                     dgvArticulos.Rows[0].Selected = true;
                 }
 
-                //cargarImagen(listaArticulos[0].Imagen);
             }
             catch (Exception ex)
             {

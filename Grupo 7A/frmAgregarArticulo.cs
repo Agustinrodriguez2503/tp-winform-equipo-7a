@@ -55,8 +55,9 @@ namespace Grupo_7A
                     cbxCategoria.SelectedValue = articulo.Categoria.Id;
                     cbxMarca.SelectedValue = articulo.Marca.Id;
                     txtImagen.Text = articulo.Imagen;
+                    cargarImagen(txtImagen.Text);
                     txtPrecio.Text = articulo.Precio.ToString();
-                    pbxAgregarArticulo.Load(articulo.Imagen);
+
                 }
 
             }
@@ -71,7 +72,9 @@ namespace Grupo_7A
         {
             try
             {
+
                 pbxAgregarArticulo.Load(imagen);
+
             }
             catch (Exception)
             {
@@ -100,6 +103,9 @@ namespace Grupo_7A
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
+                if (validarCargaArticulo())
+                    return;
+                
                 if (articulo == null)
                     articulo = new Articulo();
 
@@ -114,19 +120,21 @@ namespace Grupo_7A
                 if (articulo.Id != 0)
                 {
                     negocio.modificar(articulo);
+                    articulo.Id = negocio.ultimoAgregado(); //Busca el ultimo articulo (Que es el que se agrego recien)
+                    negocio.modificarImagen(articulo);
                     MessageBox.Show("Articulo modificado exitosamente");
                 }
                 else
                 {
                     if (validarCargaArticulo())
                         return;
-                    negocio.agregar(articulo);
+                    negocio.agregar(articulo); //Agregar el Articulo a la Base de datos
+                    articulo.Id = negocio.ultimoAgregado(); //Busca el ultimo articulo (Que es el que se agrego recien)
+                    negocio.agregarImagen(articulo);// Para luego mandarle el articulo con su ID y poder cargarlo en la tabla IMAGENES con el ID de Articulo.             
                     MessageBox.Show("Articulo agregado exitosamente");
+
                 }
 
-                //negocio.agregar(articulo); //Agregar el Articulo a la Base de datos
-                articulo.Id = negocio.ultimoAgregado(); //Busca el ultimo articulo (Que es el que se agrego recien)
-                negocio.agregarImagen(articulo);// Para luego mandarle el articulo con su ID y poder cargarlo en la tabla IMAGENES con el ID de Articulo.             
 
                 Close();
 

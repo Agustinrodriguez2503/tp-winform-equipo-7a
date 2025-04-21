@@ -118,11 +118,7 @@ namespace negocio
                 datos.setearParametro("@precio", modificar.Precio);
                 datos.setearParametro("@id", modificar.Id);
                 datos.ejecutarAccion();
-                // Modifica en tabla Imagenes
-                datos.setearConsulta("Update IMAGENES set ImagenUrl = @imagenUrl Where IdArticulo = @idArt");
-                datos.setearParametro("@imagenUrl", modificar.Imagen);
-                datos.setearParametro("@idArt", modificar.Id);
-                datos.ejecutarAccion();
+
             }
             catch (Exception ex)
             {
@@ -132,6 +128,22 @@ namespace negocio
             finally
             {
                 datos.cerrarConexion();
+            }
+        }
+        public void modificarImagen(Articulo articulo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("Update IMAGENES set ImagenUrl = @imagenUrl Where IdArticulo = @idArt");
+                datos.setearParametro("@imagenUrl", articulo.Imagen);
+                datos.setearParametro("@idArt", articulo.Id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
             }
         }
 
