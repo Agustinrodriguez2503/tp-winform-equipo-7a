@@ -98,15 +98,10 @@ namespace Grupo_7A
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
-
             try
             {
-
-                if (validarCargaArticulo())
-                    return;
-
-
-                Articulo articulo = new Articulo();
+                if (articulo == null)
+                    articulo = new Articulo();
 
                 articulo.Codigo = txtCodigo.Text;
                 articulo.Nombre = txtNombre.Text;
@@ -116,13 +111,22 @@ namespace Grupo_7A
                 articulo.Imagen = txtImagen.Text;
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
 
-                negocio.agregar(articulo); //Agregar el Articulo a la Base de datos
+                if (articulo.Id != 0)
+                {
+                    negocio.modificar(articulo);
+                    MessageBox.Show("Articulo modificado exitosamente");
+                }
+                else
+                {
+                    if (validarCargaArticulo())
+                        return;
+                    negocio.agregar(articulo);
+                    MessageBox.Show("Articulo agregado exitosamente");
+                }
+
+                //negocio.agregar(articulo); //Agregar el Articulo a la Base de datos
                 articulo.Id = negocio.ultimoAgregado(); //Busca el ultimo articulo (Que es el que se agrego recien)
-                negocio.agregarImagen(articulo);// Para luego mandarle el articulo con su ID y poder cargarlo en la tabla IMAGENES con el ID de Articulo.
-
-
-                MessageBox.Show("¡Articulo agregado con exito!");
-             
+                negocio.agregarImagen(articulo);// Para luego mandarle el articulo con su ID y poder cargarlo en la tabla IMAGENES con el ID de Articulo.             
 
                 Close();
 
